@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+env/
+venv/
+
+# Local runtime settings and logs
+settings.json
+settings.json.bad
+*.tmp
+*.log
+translator.log
+
+# IDE & OS
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

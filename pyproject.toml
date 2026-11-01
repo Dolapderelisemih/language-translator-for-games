@@ -1,0 +1,35 @@
+[project]
+name = "language-translator-for-games"
+version = "1.0.0"
+description = "Real-time AI OCR & overlay in-game subtitle translator (Anti-Cheat Safe, Click-Through HUD)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Dolapderelisemih" }
+]
+keywords = [
+    "game-translation",
+    "real-time-translator",
+    "game-overlay",
+    "rapidocr",
+    "pyqt6",
+    "ocr",
+    "anti-cheat-safe"
+]
+dependencies = [
+    "deep-translator>=1.11.4",
+    "keyboard>=0.13.5",
+    "mss>=10.2.0",
+    "pillow>=13.0.0",
+    "pyqt6>=6.12.0",
+    "rapidocr-onnxruntime>=1.4.4",
+    "winocr>=0.0.15",
+]
+
+[project.scripts]
+game-translator = "main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
